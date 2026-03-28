@@ -1,0 +1,26 @@
+/* src/styles/animations.css */
+
+/* Keyframes */
+@keyframes pulse-ring {
+  0% { box-shadow: 0 0 0 0 rgba(211,124,54,0.6); }
+  70% { box-shadow: 0 0 0 12px rgba(211,124,54,0); }
+  100% { box-shadow: 0 0 0 0 rgba(211,124,54,0); }
+}
+
+@keyframes slide-up { 
+  from { transform: translateY(20px); opacity:0; } 
+  to { transform: translateY(0); opacity:1; } 
+}
+
+@keyframes fade-in { 
+  from { opacity:0; } 
+  to { opacity:1; } 
+}
+
+/* Classes */
+.pulse-dot { animation: pulse-ring 2s ease-out infinite; }
+.anim-slide-up { animation: slide-up 0.4s ease-out forwards; }
+.anim-fade { animation: fade-in 0.5s ease-out forwards; }
+.alert-banner { animation: slide-up 0.3s ease-out; }
+
+.voice-btn.speaking { animation: pulse-ring 1.5s ease-out infinite; }

@@ -1,0 +1,21 @@
+/* src/styles/components.css */
+
+.leaflet-container { border-radius: 16px; }
+
+.nav-link { position: relative; }
+.nav-link.active::after { 
+  content:''; position:absolute; bottom:-4px; left:0; right:0; height:3px; background:#d37c36; border-radius:2px; 
+}
+
+.step-circle { 
+  width:40px; height:40px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:16px; 
+}
+
+.step-circle.done { background:linear-gradient(135deg, #d37c36 0%, #c96d2a 100%); color:#fff; }
+.step-circle.current { background:#fff; color:#d37c36; border:3px solid #d37c36; }
+.step-circle.pending { background:rgba(212,145,104,0.2); color:#8b7355; }
+
+.map-container { height: 320px; width: 100%; border-radius: 16px; overflow: hidden; }
+
+.upload-area { border:2px dashed #d37c36; border-radius:14px; cursor:pointer; transition:all 0.3s; }
+.upload-area:hover { background:rgba(212,124,84,0.1); border-color:#efb870; }

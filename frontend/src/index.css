@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Leaflet map must be below our UI overlays */
+.leaflet-container {
+  z-index: 1;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Smooth scroll for the driver view */
+html {
+  scroll-behavior: smooth;
+}
